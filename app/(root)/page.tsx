@@ -1,9 +1,13 @@
+import { UserButton } from '@clerk/nextjs';
 import React from 'react'
 
-const Index = () => {
+const Home = () => {
   return (
-    <div>Index</div>
+    <div>
+      <p>Home</p>
+      <UserButton />
+    </div>
   )
 }
 
-export default Index
+export default Home;

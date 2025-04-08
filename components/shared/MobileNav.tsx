@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { navLinks } from '@/constants'
 import { usePathname } from 'next/navigation'
+import { UserButton } from '@clerk/nextjs'
 
 const MobileNav = () => {
   const pathname = usePathname();
@@ -42,6 +43,9 @@ const MobileNav = () => {
                   ) 
                 })
                 }
+                <li className="flex-center cursor-pointer">
+                  <UserButton showName />
+                </li>
               </ul>
             </>
           </SheetContent>

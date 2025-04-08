@@ -18,7 +18,6 @@ const Sidebar = () => {
                 <Image src="/assets/images/logo-text.png" alt="logo" width={180} height={28}></Image>
             </Link>
             <nav className="sidebar-nav">
-              
               <SignedOut>
                  <Button asChild className="buton bg-purple-gradient bg-cover">
                     Login
@@ -50,7 +49,7 @@ const Sidebar = () => {
                   })
                   }
                   <li className="flex-center cursor-pointer gap-2 p-4">
-                    <UserButton afterSignOutUrl='/' showName />
+                    <UserButton showName />
                   </li>
                 </ul>
               </SignedIn>
